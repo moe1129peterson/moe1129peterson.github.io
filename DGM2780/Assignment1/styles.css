@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Font Styles */
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+
+/* Multiple Use Styles */
+
+.margin {
+    margin-left: 72px;
+}
+
+.spacing {
+    padding: 0px 105px 163px 105px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-right: 75px;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Nav Styles */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none; 
+}
+
+nav li a {
+    color: #79706E;
+    font-weight: 600;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+nav a:hover {
+    color: #3964FA;
+    font-weight: 800;
+}
+
+/* Main Styles */
+
+#container {
+    width: 1280px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#logoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+}
+
+#mobileMarketPlace{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    align-items: flex-start;
+}
+
+#mobileMarketPlace h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#mobileMarketPlace p {
+    width: 75%;
+    color: #79706E;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.discoverNewWorld {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#discoverNewWorldH2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+#discoverNewWorldP {
+    font-size: 18px;
+    font-weight: 400;
+    color: #79706E;
+    width: 55%;
+}
+
+#clientsHandsLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#clientsHandsLeft h3 {
+    font-size: 38px;
+}
+
+#clientsHandsLeft p {
+    font-size: 18px;
+    color: #79706E;
+}
+
+#clientsHandsRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+#clientsHandsRight h3 {
+    font-size: 38px;
+}
+
+#clientsHandsRight p {
+    color: #79706E;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#campaignInsights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 95px;
+    padding: 85px 0 78px 0;
+    text-align: left;
+}
+
+#campaignInsights h2 {
+    width: 90%;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#campaignInsights p {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Button Styles */
+
+#demoButton{
+    width: 339px;
+    height: 48px;
+    border-radius: 16px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #FB7852;
+}
+
+#getStartedButton {
+    width: 339px;
+    height: 48px;
+    border-radius: 16px;
+    border-style: solid;
+    color: #FB7852;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    border-color: #FB7852;
+    border-width: 3px;
+}
+
+#getAnswersButton {
+    width: 280px;
+    height: 48px;
+    border-radius: 16px;
+    border-style: solid;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #FB7852;
+    border-color: #FFFFFF;
+    border-width: 3px;
+}
+
+/* Image Styles */
+
+#logo {
+    width: 232px;
+    height: 46.29px;
+    margin-left: 95px;
+}
+
+#womanOnPhone {
+    width: 100%;
+}
+
+#typingLaptop {
+    width: 646px;
+    height: 464px;
+}
+
+#phoneInHand {
+    width: 100%;
+}
+
+#manOnPhone {
+    width: 646px;
+    height: 464px;
+}
+
+#foldingArms {
+    width: 551x;
+    height: 490px;
+}
+
+/* Footer Styles */
+
+footer {
+    height: 490px;
+    padding: 0 55px 0 55px;
+    background-color: #FB7852;
+}
+
+#chatWithExpert {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0 65px 0;
+    text-align: center;
+}
+
+#chatWithExpert h2 {
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+#chatWithExpert p {
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 68%;
+}

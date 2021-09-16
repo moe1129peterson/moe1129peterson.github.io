@@ -13,49 +13,62 @@ header {
     background-color: $primaryColor;
     color: #eee;
     padding: 1rem $gutter;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
-}
 
-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: $heavyWeight;
-    
-}
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+        
+    } /* End of h1 */
+
+    h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: $regularWeight;
+        
+    } /* End of h2 */
+
+} /* End of header */
+
 
 /* Navigation rules here */
-nav {background-color: #833d3f}
-nav ul {margin: 0; padding: 0;}
-nav li {list-style-type: none;}
-nav li.active {background-color: #484941}
+nav {
+    background-color: #833d3f;
+    ul {margin: 0; padding: 0;}
+    li {list-style-type: none;}
+    li.active {background-color: #484941}
 
-nav a {
-    display: block;
-    padding: .8rem; /* 44min height */
-    color: #eee;
-    text-align: center;
-    text-decoration: none;
-}
+    a {
+        display: block;
+        padding: .8rem; /* 44min height */
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+    } /* End of a */
 
-nav a:hover {background-color: #444;}
+    a:hover {background-color: #444;}
+
+} /* End of nav */
 
 /* Main rules here */
 main {
     padding: 1rem $gutter;
     display: block;
-}
 
-main h1 {color: $primaryColor;
-    font-weight: $heavyWeight;
-}
+    h1 {color: $primaryColor;
+        font-weight: $heavyWeight;
+    } /* End of h1 */
 
-main figure img {width: 100%;}
+    figure {
+        width: 100%;
+        margin: 0;
 
-main figure {
-    width: 100%;
-    margin: 0;
-}
+        img {width: 100%;}
+    } /* End of figure */
 
-main figcaption {text-align: center; font-size: .8rem;}
+    figcaption {text-align: center; font-size: .8rem;}
+
+} /* End of main */
 
 /* Footer rules here */
 footer {

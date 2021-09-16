@@ -447,9 +447,22 @@ body {
 }
 
 /* Header rules here */
+#headerWrapper {
+  background-color: #053e57;
+}
+
+#headerContainer {
+  display: flex;
+  align-items: center;
+}
+
+#headerTxt {
+  width: 300px;
+  margin-left: 2%;
+}
+
 header {
-  background-color: #054a68;
-  color: #eee;
+  color: #faecc2;
   padding: 1rem 2%;
   /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
   /* End of h1 */
@@ -468,8 +481,12 @@ header h2 {
 
 /* End of header */
 /* Navigation rules here */
+#navWrapper {
+  background-color: #ea7921;
+  margin-bottom: 0;
+}
+
 nav {
-  background-color: #833d3f;
   /* End of a */
 }
 nav ul {
@@ -480,30 +497,44 @@ nav li {
   list-style-type: none;
 }
 nav li.active {
-  background-color: #484941;
+  background-color: #f34242;
 }
 nav a {
   display: block;
   padding: .8rem;
   /* 44min height */
-  color: #eee;
+  color: #faecc2;
   text-align: center;
   text-decoration: none;
 }
 nav a:hover {
-  background-color: #444;
+  background-color: #c0641d;
 }
 
 /* End of nav */
+#heroImage {
+  width: 100%;
+  height: auto;
+}
+#heroImage img {
+  width: 100%;
+  height: auto;
+}
+
 /* Main rules here */
+#mainWrapper {
+  background-color: #054a680a;
+}
+
 main {
+  background-color: white;
   padding: 1rem 2%;
   display: block;
   /* End of h1 */
   /* End of figure */
 }
 main h1 {
-  color: #054a68;
+  color: #053e57;
   font-weight: 700;
 }
 main figure {
@@ -520,11 +551,14 @@ main figcaption {
 
 /* End of main */
 /* Footer rules here */
+#footerWrapper {
+  background-color: #053e57;
+}
+
 footer {
   text-align: center;
-  color: #eee;
+  color: #faecc2;
   padding: 1rem 2%;
-  background-color: #054a68;
 }
 
 @media only screen and (min-width: 560px) {

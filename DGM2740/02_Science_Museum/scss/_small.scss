@@ -9,9 +9,21 @@ body {
 }
 
 /* Header rules here */
+#headerWrapper {background-color: $primaryColor;}
+
+#headerContainer{
+    display: flex;
+    align-items: center;
+}
+
+#headerTxt{
+    width: 300px;
+    margin-left: $gutter;
+}
+
 header {
-    background-color: $primaryColor;
-    color: #eee;
+    
+    color: $peachTextColor;
     padding: 1rem $gutter;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
 
     h1 {
@@ -32,26 +44,44 @@ header {
 
 
 /* Navigation rules here */
+#navWrapper {background-color: #ea7921;
+
+    margin-bottom: 0;
+
+}
 nav {
-    background-color: #833d3f;
+    
     ul {margin: 0; padding: 0;}
     li {list-style-type: none;}
-    li.active {background-color: #484941}
+    li.active {background-color: #f34242}
 
     a {
         display: block;
         padding: .8rem; /* 44min height */
-        color: #eee;
+        color: $peachTextColor;
         text-align: center;
         text-decoration: none;
     } /* End of a */
 
-    a:hover {background-color: #444;}
+    a:hover {background-color: #c0641d;}
 
 } /* End of nav */
 
+#heroImage {
+    width: 100%;
+    height: auto;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Main rules here */
+#mainWrapper{background-color: #054a680a;}
+
 main {
+    background-color: white;
     padding: 1rem $gutter;
     display: block;
 
@@ -71,9 +101,10 @@ main {
 } /* End of main */
 
 /* Footer rules here */
+#footerWrapper {background-color: $primaryColor;}
+
 footer {
     text-align:center;
-    color: #eee;
+    color: $peachTextColor;
     padding: 1rem $gutter;
-    background-color: $primaryColor;
 }

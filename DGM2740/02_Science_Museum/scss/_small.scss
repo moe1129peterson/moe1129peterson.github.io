@@ -1,0 +1,66 @@
+/* Tells the box sizing to follow the box size protocal. */
+* { -moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/* Body rules here */
+body {
+    font-family: verdana;
+    font-size: 16px;
+}
+
+/* Header rules here */
+header {
+    background-color: #054a68;
+    color: #eee;
+    padding: 1rem 2%;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
+}
+
+header h1 {
+    margin: 0;
+
+}
+
+header h1 {
+    margin: 0;
+    
+}
+
+/* Navigation rules here */
+nav {background-color: #833d3f}
+nav ul {margin: 0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active {background-color: #484941}
+
+nav a {
+    display: block;
+    padding: .8rem; /* 44min height */
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {background-color: #444;}
+
+/* Main rules here */
+main {
+    padding: 1rem 2%;
+    display: block;
+}
+
+main h1 {color: #054a68;}
+
+main figure img {width: 100%;}
+
+main figure {
+    width: 100%;
+    margin: 0;
+}
+
+main figcaption {text-align: center; font-size: .8rem;}
+
+/* Footer rules here */
+footer {
+    text-align:center;
+    color: #eee;
+    padding: 1rem 2%;
+    background-color: #833d3f;
+}

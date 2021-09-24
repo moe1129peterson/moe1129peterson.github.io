@@ -411,12 +411,13 @@ body {
   margin-top: 2rem; }
 
 #logoTxt {
-  margin-top: 1.5rem; }
+  margin-top: 3rem;
+  margin-left: 1rem; }
 
 header {
   display: grid;
   grid-template-columns: 100px auto;
-  color: #c9653d;
+  color: #005c0c;
   padding: 1.5rem;
   /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */ }
 
@@ -464,7 +465,7 @@ main {
 
 h1 {
   margin-top: 2%;
-  color: #c9653d; }
+  color: #005c0c; }
 
 div.familyGallery {
   display: flex;
@@ -504,6 +505,9 @@ footer {
 
   #logoTxt h2 {
     font-size: 1.5rem; }
+
+  #logoTxt {
+    margin-top: 2.5rem; }
 
   /* -------------- Main styles here ---------------- */
   div.familyGallery figure {

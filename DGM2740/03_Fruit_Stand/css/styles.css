@@ -435,7 +435,7 @@ h2 {
 
 /* End of h2 */
 nav {
-  background-color: #f34242; }
+  background-color: #d83d3d; }
 
 nav ul {
   margin: 0;
@@ -443,21 +443,21 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  background-color: #f01212; }
+  background-color: #bc2626; }
 
 nav li.active {
-  background-color: #c30c0c; }
+  background-color: #921d1d; }
 
 nav a {
   display: block;
   padding: .8rem 0;
   /*44px min*/
-  color: #faecc2;
+  color: #ffffff;
   text-align: center;
   text-decoration: none; }
 
 nav a:hover {
-  background-color: #f9a2a2; }
+  background-color: #e99292; }
 
 /* -------------- Main styles here ---------------- */
 main {
@@ -483,8 +483,8 @@ div.familyGallery figure figcaption {
   font-size: .8rem; }
 
 footer {
-  background-color: #f34242;
-  color: #faecc2;
+  background-color: #d83d3d;
+  color: #ffffff;
   text-align: center;
   padding: 1rem 2%; }
 

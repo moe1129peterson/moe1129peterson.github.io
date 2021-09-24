@@ -1,0 +1,111 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+
+/* Header rules here */
+
+#logo {
+    margin-top: 2rem;
+}
+
+#logoTxt {
+    margin-top: 1.5rem;  
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    color: $secondaryColor;
+    padding: 1.5rem;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
+ 
+} /* End of header */
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700; 
+} /* End of h1 */
+
+h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+} /* End of h2 */
+
+
+
+nav {background-color: $menuColor;}
+nav ul{margin:0; padding: 0;}
+nav li {
+    list-style-type: none;
+    background-color: darken($menuColor, 10%);
+}
+nav li.active {background-color: darken($menuColor, 20%);}
+nav a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: $peachTextColor;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover {background-color: lighten($menuColor, 20%);}
+
+
+
+/* -------------- Main styles here ---------------- */
+
+main {
+    min-height: 10rem;
+}
+
+h1 {
+    margin-top: $gutter;
+    color: $secondaryColor;
+}
+
+div.familyGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.familyGallery figure {
+    flex-basis: 46%;
+    margin: 1rem 2%;
+}
+
+div.familyGallery figure img {
+    width: 100%;
+}
+
+
+div.familyGallery figure figcaption {
+    text-align: center; 
+    font-size: .8rem;
+}
+
+
+footer {
+    background-color: $primaryColor;
+    color: $peachTextColor;
+    text-align: center;
+    padding: 1rem 2%;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

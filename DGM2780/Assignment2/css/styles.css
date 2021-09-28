@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* Mixins */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  margin: 0 auto; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* Font Styles */
+  /* Multiple Use Styles */ }
+  body h2 {
+    font-family: "Nunito Sans", sans-serif; }
+  body h3 {
+    font-family: "Nunito Sans", sans-serif; }
+  body p {
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px; }
+  body .margin {
+    margin-left: 72px; }
+  body .spacing {
+    padding: 0px 105px 163px 105px; }
+  body .rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+/* Main Styles */
+main #container {
+  width: 1280px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+main #logoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%; }
+main #mobileMarketPlace {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  align-items: flex-start; }
+main #mobileMarketPlace h2 {
+  font-size: 48px;
+  font-weight: 700; }
+main #mobileMarketPlace p {
+  width: 75%;
+  color: #79706E;
+  font-size: 18px;
+  font-weight: 400; }
+main .discoverNewWorld {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 380px;
+  text-align: center;
+  align-items: center; }
+main #discoverNewWorldH2 {
+  font-size: 38px;
+  font-weight: 700; }
+main #discoverNewWorldP {
+  font-size: 18px;
+  font-weight: 400;
+  color: #79706E;
+  width: 55%; }
+main #clientsHandsLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-right: 25px; }
+main #clientsHandsLeft h3 {
+  font-size: 38px; }
+main #clientsHandsLeft p {
+  font-size: 18px;
+  color: #79706E; }
+main #clientsHandsRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
+  align-items: center;
+  text-align: center; }
+main #clientsHandsRight h3 {
+  font-size: 38px; }
+main #clientsHandsRight p {
+  color: #79706E;
+  font-size: 18px;
+  font-weight: 400; }
+main #campaignInsights {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: 95px;
+  padding: 85px 0 78px 0;
+  text-align: left; }
+main #campaignInsights h2 {
+  width: 90%;
+  font-size: 48px;
+  font-weight: 700; }
+main #campaignInsights p {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 400; }
+
+/* Image Styles */
+#logo {
+  width: 232px;
+  height: 46.29px;
+  margin-left: 95px; }
+
+#womanOnPhone {
+  width: 100%; }
+
+#team {
+  width: 646px;
+  height: 464px; }
+
+#phoneInHand {
+  width: 100%; }
+
+#manOnPhone {
+  width: 646px;
+  height: 464px; }
+
+#foldingArms {
+  width: 551x;
+  height: 490px; }
+
+/* Button Styles */
+#demoButton {
+  width: 339px;
+  height: 48px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  border-style: none;
+  color: #FFFFFF;
+  background-color: #FB7852; }
+
+#getStartedButton {
+  width: 339px;
+  height: 48px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  border-style: solid;
+  color: #FB7852;
+  background-color: #FFFFFF;
+  border-color: #FB7852;
+  border-width: 3px; }
+
+#getAnswersButton {
+  width: 280px;
+  height: 48px;
+  border-radius: 16px;
+  border-style: solid;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #FB7852;
+  border-color: #FFFFFF;
+  border-width: 3px; }
+
+/* Nav Styles */
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%; }
+
+nav li {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none; }
+
+nav li a {
+  color: #79706E;
+  font-weight: 600;
+  text-decoration: none;
+  list-style-type: none; }
+
+nav a:hover {
+  color: #3964FA;
+  font-weight: 800; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding-right: 75px; }
+
+/* Footer Styles */
+footer {
+  height: 490px;
+  padding: 0 55px 0 55px;
+  background-color: #FB7852; }
+
+#chatWithExpert {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0 65px 0;
+  text-align: center; }
+
+#chatWithExpert h2 {
+  font-size: 42px;
+  color: #FFFFFF; }
+
+#chatWithExpert p {
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 68%; }

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    /* Font Styles */
+    h2 {
+        font-family: $mainFontFamily;
+    }
+
+    h3 {
+        font-family: $mainFontFamily;
+    }
+
+    p {
+        font-family: $secondaryFontFamily;
+        line-height: 30px;
+    }
+
+    /* Multiple Use Styles */
+
+    .margin {
+        margin-left: 72px;
+    }
+
+    .spacing {
+        padding: 0px 105px 163px 105px;
+    }
+
+    .rowContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+/* Main Styles */
+main {
+    #container {
+        width: 1280px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #logoContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 50%;
+        height: 100%;
+    }
+    
+    #mobileMarketPlace{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    #mobileMarketPlace h2 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    
+    #mobileMarketPlace p {
+        width: 75%;
+        color: $paraColor;
+        font-size: $smallFontSize;
+        font-weight: 400;
+    }
+    
+    .discoverNewWorld {
+        @include mainColumnsCentered();
+        height: 380px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #discoverNewWorldH2 {
+        font-size: $mediumFontSize;
+        font-weight: 700;
+    }
+    
+    #discoverNewWorldP {
+        font-size: $smallFontSize;
+        font-weight: 400;
+        color: $paraColor;
+        width: 55%;
+    }
+    
+    #clientsHandsLeft {
+
+    @include mainColumnsCentered();
+        text-align: center;
+        align-items: center;
+        margin-right: 25px;
+    }
+    
+    #clientsHandsLeft h3 {
+        font-size: $mediumFontSize;
+    }
+    
+    #clientsHandsLeft p {
+        font-size: $smallFontSize;
+        color: $paraColor;
+    }
+    
+    #clientsHandsRight {
+        @include mainColumnsCentered();
+        margin-left: 25px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #clientsHandsRight h3 {
+        font-size: $mediumFontSize;
+    }
+    
+    #clientsHandsRight p {
+        color: $paraColor;
+        font-size: $smallFontSize;
+        font-weight: 400;
+    }
+    
+    #campaignInsights {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-left: 95px;
+        padding: 85px 0 78px 0;
+        text-align: left;
+    }
+    
+    #campaignInsights h2 {
+        width: 90%;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    
+    #campaignInsights p {
+        width: 80%;
+        font-size: $smallFontSize;
+        font-weight: 400;
+    }
+}
+
+/* Image Styles */
+
+#logo {
+    width: 232px;
+    height: 46.29px;
+    margin-left: 95px;
+}
+
+#womanOnPhone {
+    width: 100%;
+}
+
+#team {
+    @include largeImg();
+}
+
+#phoneInHand {
+    width: 100%;
+}
+
+#manOnPhone {
+    @include largeImg();
+}
+
+#foldingArms {
+    width: 551x;
+    height: 490px;
+}

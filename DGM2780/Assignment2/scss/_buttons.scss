@@ -1,0 +1,30 @@
+/* Button Styles */
+
+#demoButton{
+    @include mainButton();
+    border-style: none;
+    color: #FFFFFF;
+    background-color: $mainColor;
+}
+
+#getStartedButton {
+    @include mainButton();
+    border-style: solid;
+    color: $mainColor;
+    background-color: #FFFFFF;
+    border-color: $mainColor;
+    border-width: 3px;
+}
+
+#getAnswersButton {
+    width: 280px;
+    height: 48px;
+    border-radius: $smallestFontSize;
+    border-style: solid;
+    color: #FFFFFF;
+    font-size: $smallFontSize;
+    font-weight: 700;
+    background-color: $mainColor;
+    border-color: #FFFFFF;
+    border-width: 3px;
+}

@@ -1,0 +1,36 @@
+/* Nav Styles */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none; 
+}
+
+nav li a {
+    color: $paraColor;
+    font-weight: 600;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+nav a:hover {
+    color: #3964FA;
+    font-weight: 800;
+}

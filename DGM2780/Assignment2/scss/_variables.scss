@@ -1,0 +1,34 @@
+$mainFontFamily: 'Nunito Sans', sans-serif;
+
+$secondaryFontFamily: 'Open Sans', sans-serif;
+
+$mainColor: #FB7852;
+
+$paraColor: #79706E;
+
+$mediumFontSize: 38px;
+
+$smallFontSize: 18px;
+
+$smallestFontSize: 16px;
+
+/* Mixins */
+
+@mixin mainButton {
+    width: 339px;
+    height: 48px;
+    border-radius: $smallestFontSize;
+    font-size: $smallFontSize;
+    font-weight: 700;
+}
+
+@mixin largeImg {
+    width: 646px;
+    height: 464px;
+}
+
+@mixin mainColumnsCentered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

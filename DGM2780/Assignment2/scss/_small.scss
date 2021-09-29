@@ -45,118 +45,122 @@ body {
 }
 
 /* Main Styles */
-main {
-    #container {
-        width: 1280px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    
-    #logoContainer {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
-        width: 50%;
-        height: 100%;
-    }
-    
-    #mobileMarketPlace{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: left;
-        align-items: flex-start;
-    }
-    
-    #mobileMarketPlace h2 {
+
+#container {
+    width: 1280px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+#logoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+}
+
+#mobileMarketPlace {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    align-items: flex-start;
+
+    h2 {
         font-size: 48px;
         font-weight: 700;
     }
-    
-    #mobileMarketPlace p {
+
+    p {
         width: 75%;
         color: $paraColor;
         font-size: $smallFontSize;
         font-weight: 400;
     }
-    
-    .discoverNewWorld {
-        @include mainColumnsCentered();
-        height: 380px;
-        text-align: center;
-        align-items: center;
-    }
-    
-    #discoverNewWorldH2 {
-        font-size: $mediumFontSize;
-        font-weight: 700;
-    }
-    
-    #discoverNewWorldP {
-        font-size: $smallFontSize;
-        font-weight: 400;
-        color: $paraColor;
-        width: 55%;
-    }
-    
-    #clientsHandsLeft {
 
+}
+
+.discoverNewWorld {
     @include mainColumnsCentered();
-        text-align: center;
-        align-items: center;
-        margin-right: 25px;
-    }
-    
-    #clientsHandsLeft h3 {
+    height: 380px;
+    text-align: center;
+    align-items: center;
+}
+
+#discoverNewWorldH2 {
+    font-size: $mediumFontSize;
+    font-weight: 700;
+}
+
+#discoverNewWorldP {
+    font-size: $smallFontSize;
+    font-weight: 400;
+    color: $paraColor;
+    width: 55%;
+}
+
+#clientsHandsLeft {
+
+@include mainColumnsCentered();
+    text-align: center;
+    align-items: center;
+    margin-right: 25px;
+
+    h3 {
         font-size: $mediumFontSize;
     }
-    
-    #clientsHandsLeft p {
+
+    p {
         font-size: $smallFontSize;
         color: $paraColor;
     }
+
+}
+
+#clientsHandsRight {
+    @include mainColumnsCentered();
+    margin-left: 25px;
+    align-items: center;
+    text-align: center;
     
-    #clientsHandsRight {
-        @include mainColumnsCentered();
-        margin-left: 25px;
-        align-items: center;
-        text-align: center;
-    }
-    
-    #clientsHandsRight h3 {
+    h3 {
         font-size: $mediumFontSize;
     }
-    
-    #clientsHandsRight p {
+
+    p {
         color: $paraColor;
         font-size: $smallFontSize;
         font-weight: 400;
     }
     
-    #campaignInsights {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        margin-left: 95px;
-        padding: 85px 0 78px 0;
-        text-align: left;
-    }
-    
-    #campaignInsights h2 {
+}
+
+#campaignInsights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 95px;
+    padding: 85px 0 78px 0;
+    text-align: left;
+
+    h2 {
         width: 90%;
         font-size: 48px;
         font-weight: 700;
     }
-    
-    #campaignInsights p {
+
+    p {
         width: 80%;
         font-size: $smallFontSize;
         font-weight: 400;
     }
 }
+
 
 /* Image Styles */
 
@@ -172,6 +176,7 @@ main {
 
 #team {
     @include largeImg();
+    margin-top: 2rem;
 }
 
 #phoneInHand {
@@ -183,6 +188,9 @@ main {
 }
 
 #foldingArms {
-    width: 551x;
-    height: 490px;
+    @include mediumImg();
+}
+
+#typingLaptop {
+    @include largeImg();
 }

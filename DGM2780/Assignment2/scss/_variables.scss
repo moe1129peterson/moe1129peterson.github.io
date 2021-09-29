@@ -27,6 +27,11 @@ $smallestFontSize: 16px;
     height: 464px;
 }
 
+@mixin mediumImg {
+    width: 551x;
+    height: 490px;
+}
+
 @mixin mainColumnsCentered {
     display: flex;
     flex-direction: column;

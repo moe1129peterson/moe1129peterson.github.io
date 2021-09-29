@@ -30,73 +30,81 @@ body {
     justify-content: center; }
 
 /* Main Styles */
-main #container {
+#container {
   width: 1280px;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
-main #logoContainer {
+
+#logoContainer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   width: 50%;
   height: 100%; }
-main #mobileMarketPlace {
+
+#mobileMarketPlace {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: left;
   align-items: flex-start; }
-main #mobileMarketPlace h2 {
-  font-size: 48px;
-  font-weight: 700; }
-main #mobileMarketPlace p {
-  width: 75%;
-  color: #79706E;
-  font-size: 18px;
-  font-weight: 400; }
-main .discoverNewWorld {
+  #mobileMarketPlace h2 {
+    font-size: 48px;
+    font-weight: 700; }
+  #mobileMarketPlace p {
+    width: 75%;
+    color: #79706E;
+    font-size: 18px;
+    font-weight: 400; }
+
+.discoverNewWorld {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 380px;
   text-align: center;
   align-items: center; }
-main #discoverNewWorldH2 {
+
+#discoverNewWorldH2 {
   font-size: 38px;
   font-weight: 700; }
-main #discoverNewWorldP {
+
+#discoverNewWorldP {
   font-size: 18px;
   font-weight: 400;
   color: #79706E;
   width: 55%; }
-main #clientsHandsLeft {
+
+#clientsHandsLeft {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   margin-right: 25px; }
-main #clientsHandsLeft h3 {
-  font-size: 38px; }
-main #clientsHandsLeft p {
-  font-size: 18px;
-  color: #79706E; }
-main #clientsHandsRight {
+  #clientsHandsLeft h3 {
+    font-size: 38px; }
+  #clientsHandsLeft p {
+    font-size: 18px;
+    color: #79706E; }
+
+#clientsHandsRight {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 25px;
   align-items: center;
   text-align: center; }
-main #clientsHandsRight h3 {
-  font-size: 38px; }
-main #clientsHandsRight p {
-  color: #79706E;
-  font-size: 18px;
-  font-weight: 400; }
-main #campaignInsights {
+  #clientsHandsRight h3 {
+    font-size: 38px; }
+  #clientsHandsRight p {
+    color: #79706E;
+    font-size: 18px;
+    font-weight: 400; }
+
+#campaignInsights {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -104,14 +112,14 @@ main #campaignInsights {
   margin-left: 95px;
   padding: 85px 0 78px 0;
   text-align: left; }
-main #campaignInsights h2 {
-  width: 90%;
-  font-size: 48px;
-  font-weight: 700; }
-main #campaignInsights p {
-  width: 80%;
-  font-size: 18px;
-  font-weight: 400; }
+  #campaignInsights h2 {
+    width: 90%;
+    font-size: 48px;
+    font-weight: 700; }
+  #campaignInsights p {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400; }
 
 /* Image Styles */
 #logo {
@@ -124,7 +132,8 @@ main #campaignInsights p {
 
 #team {
   width: 646px;
-  height: 464px; }
+  height: 464px;
+  margin-top: 2rem; }
 
 #phoneInHand {
   width: 100%; }
@@ -136,6 +145,10 @@ main #campaignInsights p {
 #foldingArms {
   width: 551x;
   height: 490px; }
+
+#typingLaptop {
+  width: 646px;
+  height: 464px; }
 
 /* Button Styles */
 #demoButton {

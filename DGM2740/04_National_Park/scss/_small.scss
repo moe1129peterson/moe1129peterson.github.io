@@ -1,0 +1,191 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+#headerWrapper {
+    background-image: url(/DGM2740/04_National_Park/images/header-small.jpg);
+    height: 140px;
+}
+
+header {
+    padding: .5rem 2%;
+    color: white;
+   
+}
+header h1 {
+    margin: 0; 
+    font-size: 1.5rem;
+    text-shadow: 0 0 1.5px black;
+}
+
+header h2 {
+    margin: 0; 
+    font-size: 1rem;
+    font-weight: normal; 
+    text-shadow: 0 0 1.5px black;
+}
+
+/*----------- NAVIGATION --------------*/
+
+#navWrapper {
+    background-color: #c95b25;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: rgb(206, 80, 18);
+    color: #eee;
+    border-left: 1px solid rgb(184, 63, 2);
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #ffb78e;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #c92525;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+
+#mainWrapper {
+    background-color: rgb(236, 236, 236);
+}
+
+main {
+    background-color: rgb(241, 241, 241);
+    padding: 0 2%;
+    min-height: 10rem;
+
+    h1 {
+        margin: 0;
+        padding-top: 2rem;
+        color: #2d3135;
+    }
+    
+    
+    .cardHolder {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: none;
+    }
+
+    .card {
+        border: 1px solid #eee;
+        border-radius: $cardBorderRadius;
+        flex-basis: 100%;
+        margin: 1rem 1%;
+        text-align: center;
+
+        h2 {
+            color: #fff;
+            text-shadow: 0 0 4px black;
+            padding: 1rem 0;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 300px;
+            text-decoration: none;
+            color: white;
+            padding: 0 2%;
+            transition: all .5s ease-in;
+        }
+    
+        :hover img {
+        animation: bounce .5s 1;
+        }
+    
+        img {
+            position: relative;
+            width: 100px;
+            height: auto;
+        }
+        
+        @keyframes bounce {
+            0% {bottom: 0px; animation-timing-function: ease-out;}
+            25% {bottom: 20px; animation-timing-function: ease-in;}
+            50% {bottom: 0px; animation-timing-function: ease-out;}
+            75% {bottom: 10px; animation-timing-function: ease-in;}
+            100% {bottom: 0px;}
+        }
+
+        #card1 {
+            background-image: url("/DGM2740/04_National_Park/images/daisen_hiking.jpg");
+            background-repeat: no-repeat;
+            border-radius: $cardBorderRadius;
+            font-size: 1.5rem;
+        }
+    
+        #card2 {
+            background-image: url("/DGM2740/04_National_Park/images/mt_karasugasen.jpg");
+            background-repeat: no-repeat;
+            border-radius: $cardBorderRadius;
+            font-size: 1.5rem;
+        }
+    
+        #card3 {
+            background-image: url("/DGM2740/04_National_Park/images/ryokan.jpg");
+            background-repeat: no-repeat;
+            border-radius: $cardBorderRadius;
+            font-size: 1.5rem;
+        }
+    
+        #card4 {
+            background-image: url("/DGM2740/04_National_Park/images/tottori_food.jpg");
+            background-repeat: no-repeat;
+            border-radius: $cardBorderRadius;
+            font-size: 1.5rem;
+        }
+
+    }
+    
+}
+
+
+/*----------- FOOTER --------------*/
+
+#footerWrapper {
+    background-color: #c95b25;
+}
+
+footer {
+    color: #fff;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

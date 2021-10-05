@@ -1,0 +1,41 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+#headerWrapper {
+        background-image: url(/DGM2740/04_National_Park/images/header-large.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+    }
+    
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+main {
+        .card {
+            flex-basis: 23%;
+        }
+    }
+
+
+/*----------- FOOTER --------------*/
+    

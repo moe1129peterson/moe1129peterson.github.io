@@ -1,0 +1,42 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+#headerWrapper {
+    background-image: url(/DGM2740/04_National_Park/images/header-medium.jpg);
+    height: 240px;
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+main {
+    .card {
+        flex-basis: 48%;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+    

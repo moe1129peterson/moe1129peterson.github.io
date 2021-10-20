@@ -32,7 +32,8 @@ header {
 } /* End of header */
 
 h1 {
-    margin: 0;
+    margin-left: $gutter;
+    margin-top: $gutter;
     font-size: 1.5rem;
     font-weight: 700; 
 } /* End of h1 */

@@ -370,11 +370,47 @@ main {
   padding: 0 2%;
   min-height: 10rem; }
 
-div #bandMember1 {
-  float: left;
-  shape-outside: circle(100% at 100% 0%);
+div.band {
+  column-count: 1; }
+
+div.band div {
+  flex-basis: 46%;
+  margin: 1rem 2%; }
+
+div #bandMember1 img {
+  float: right;
+  shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   margin: 0 0 0.5rem; }
+
+div #bandMember2 img {
+  float: right;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  margin: 0 0 0.5rem; }
+
+div #bandMember3 img {
+  float: right;
+  shape-outside: ellipse(90px 80px at 50% 30%);
+  clip-path: ellipse(90px 80px at 50% 30%);
+  margin: 0 0 0.5rem; }
+
+div #bandMember4 img {
+  float: right;
+  shape-outside: polygon(0 0, 100% 0%, 50% 100%);
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  margin: 0 0 0.5rem; }
+
+section.gallery div {
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%;
+  position: relative; }
+
+section.gallery div img {
+  width: 100%;
+  height: auto;
+  position: absolute; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -408,6 +444,9 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
+  div.band {
+    column-count: 2; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
@@ -419,5 +458,8 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  div.band {
+    column-count: 4; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */

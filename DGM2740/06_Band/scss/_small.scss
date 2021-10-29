@@ -112,14 +112,14 @@ div #bandMember4 {
     }
 }
 
-section.gallery div {
+div.gallery div {
     width: 100%;
     height: 0;
     padding-bottom: 65%;
     position: relative;
 }
 
-section.gallery div img {
+div.gallery div img {
     width: 100%;
     height: auto;
     position: absolute;

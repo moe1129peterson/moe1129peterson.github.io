@@ -1,12 +1,6 @@
-import { JobSearch } from './JobSearch';
-
-const jobSearch = new JobSearch('#search-form', '.result-container', '.loading-element');
-jobSearch.setCountryCode();
-jobSearch.configureFormListener();
-
-
-
-
+import { BookSearch } from "./BookSearch";
+const bookSearch = new BookSearch('#search-form', '.result-container', '.loading-element');
+bookSearch.configureFormListener();
 
 
 /*const booksList = document.getElementById('booksList');

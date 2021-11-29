@@ -1,0 +1,33 @@
+header, nav, main, footer {
+        max-width: 1200px;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+
+/*----------- COLUMNS --------------*/
+main {
+        @for $i from 1 through 12 {
+                $w:($i / 12) * 100%;
+                .large-#{$i} {flex-basis: $w;}
+        } // end loop
+}
+
+    
+
+
+/*----------- FOOTER --------------*/
+    

@@ -1,0 +1,225 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+
+/* body rules */
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    background-color: $primaryColor;
+    padding: 1rem $gutter;
+    
+    h1 {
+        margin: 0; 
+        font-size: 2rem;
+        font-weight: $heavyWeight;
+        color: rgb(211, 208, 208);
+    } // end of h1
+    
+    h2{
+        margin: 0; 
+        font-size: 1.2rem; 
+        font-weight: $regularWeight;
+        color: rgb(211, 208, 208);
+        
+        
+    } // end of h2
+    
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+      
+      .searchInput {
+        width: 100%;
+        border-right: none;
+        border: 2px solid $secondaryColor;
+        height: 36px;
+        padding: 5px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: black;
+      }
+      
+      .searchInput:focus{
+        color: #fff;
+      }
+      
+      .searchButton {
+        width: 40px;
+        height: 36px;
+        border: 1px solid $secondaryColor;
+        background: $secondaryColor;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 0;
+      }
+      
+      .wrap{
+          float: right;
+          width: 30%;
+        }
+} // end of header
+
+.hidden {
+    display: none;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $primaryColor;
+    
+    ul {
+        margin:0; 
+        padding: 0;
+        list-style-type: none;
+        
+        li { 
+            width: 25%; 
+            float: left;
+        }
+    }
+    
+    li.active {
+        background-color: #333;
+    }
+    
+    a {
+        display: block;
+        padding: .8rem 0;
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+    } // end of a
+    
+    a:hover {
+        background-color: #333;
+    }
+} // end of nav
+
+/*----------- MAIN --------------*/
+main {
+    display: block;
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+/*----------- COLUMNS --------------*/
+div.flexed {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.column {
+    padding: 0 $gutter;
+}
+
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+} // end loop
+
+.lawyerCard {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+}
+
+button {
+    background-color: $secondaryColor;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    height: 2rem;
+    margin: 1rem;
+}
+
+
+.largeButton {
+    background-color: $primaryColor;
+    color: #fff;
+    text-align: center;
+    padding: $gutter * 2;
+}
+
+.blogCard {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    h3 {
+        padding: .5rem;
+    }
+
+    p {
+        padding: .5rem;
+    }
+}
+
+.fluidImg {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+.faq {
+    background-color: #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    h3 {
+        padding: .5rem;
+    }
+
+    p {
+        padding: .5rem;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    display: flex;
+    background-color: $primaryColor;
+    padding: 1rem $gutter;
+
+    a {
+        flex-basis: 25%;
+        text-align: center;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    a:hover {
+        color: black;
+        cursor: pointer;
+    }
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

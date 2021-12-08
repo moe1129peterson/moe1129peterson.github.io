@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Moe Peterson">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>09 Boston City</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <h1>Boston City</h1>
+        <h2>Where History Comes Alive</h2>
+    </header>
+    
+<!-- NAVIGATION HERE -->
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+        <li class="active"><a href="#">Visit</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pay Bills</a></li>
+        <li><a href="#">Meetings</a></li>   
+        <li><a href="#">Help</a></li>   
+    </ul>
+</nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <div class="my_slider">
+            <picture>
+                <source srcset="/DGM2740/09_Boston_City/images/Boston_History1_Small.jpg" media="(max-width: 560px)"><img src="/DGM2740/09_Boston_City/images/Boston_History1_Large.jpg" alt="Image of Boston history">
+            </picture>
+            <picture>
+                <source srcset="/DGM2740/09_Boston_City/images/Boston_History2_Small.jpg" media="(max-width: 560px)"><img src="/DGM2740/09_Boston_City/images/Boston_History2_Large.jpg" alt="Image of Boston history">
+            </picture>
+            <picture>
+                <source srcset="/DGM2740/09_Boston_City/images/Boston_History3_Small.jpg" media="(max-width: 560px)"><img src="/DGM2740/09_Boston_City/images/Boston_History3_Large.jpg" alt="Image of Boston history">
+            </picture>
+            <picture>
+                <source srcset="/DGM2740/09_Boston_City/images/Boston_History4_Small.jpg" media="(max-width: 560px)"><img src="/DGM2740/09_Boston_City/images/Boston_History4_Large.jpg" alt="Image of Boston history">
+            </picture>
+            <picture>
+                <source srcset="/DGM2740/09_Boston_City/images/Boston_History5_Small.jpg" media="(max-width: 560px)"><img src="/DGM2740/09_Boston_City/images/Boston_History5_Large.jpg" alt="Image of Boston history">
+            </picture>
+        </div>
+
+        <h2>Plan Your Visit</h2>
+
+        <div class="hover-cards">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+                <a href="#">
+                    <img src="/DGM2740/09_Boston_City/images/hotel.png" alt="Hotel">
+                    <h3>PLACES TO STAY</h3>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/DGM2740/09_Boston_City/images/bus.png" alt="Bus">
+                    <h3>WALK THE RED LINE</h3>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/DGM2740/09_Boston_City/images/map.png" alt="Map">
+                    <h3>PASS TO THE CITY</h3>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/DGM2740/09_Boston_City/images/fast-food.png" alt="Food">
+                    <h3>FINE DINING</h3>
+                </a>
+            </div>
+        </div> <!-- end of hover-cards -->
+
+    </main>
+
+    
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p>&copy; 2021 &bull; Moe Peterson &bull;</p>
+    </footer>
+
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+<script src="/DGM2740/09_Boston_City/slick/slick.min.js"></script> 
+<script src="js/scripts.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.my_slider').slick({
+            autoplay: true,
+            dots: true,
+            arrows: false
+        });
+      });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $mainFont;
+    margin: auto;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    background-color: $primaryColor;
+    color: white;
+    height: 100px;
+    
+    h1 {
+        margin: 0;
+        padding-top: 30px;
+    }
+    
+    img {
+        float: left;
+        padding: 0 10px 0 1rem;
+    }
+}
+
+/*----------- NAVIGATION --------------*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color:$menuColor;
+    font-family: $mainFont;
+}
+
+/* #hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+ */
+
+/* #primaryNav {
+    height: 0;
+    overflow: hidden;
+}
+ */
+/* #primaryNav.open {
+    height: auto;
+} */
+
+
+/* #primaryNav li ul {
+    display: none;
+}
+ */
+/* #primaryNav li:hover ul {
+    display: block;
+} */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+main {
+    min-height: 20rem;
+    padding: 0 2%;
+    font-family: $mainFont;
+}
+
+/*----------- FORM --------------*/
+form fieldset {
+    margin: 2rem 0;
+    border-radius: 10px;
+    padding: .5rem;
+    border: 1px solid $primaryColor;
+}
+
+form legend {
+    color: $primaryColor;
+    padding: 0 .5rem;
+    margin: 0 1rem;
+
+}
+
+form label.top, form div {
+    color: #000000;
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    color: #555;
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+
+form label.sbs {
+    color: #555;
+    display: block;
+    padding-top: .75rem;
+}
+
+.container {
+    font-size: 1rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    background-color: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #d3d3d3;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: $primaryColor;
+}
+  
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+} 
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    background: white;
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+form input.submitBtn {
+    background-color: $primaryColor;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    /* padding-top: .75rem 1.5rem; */
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    height: 50px;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $primaryColor;
+    height: 100px;
+    padding: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

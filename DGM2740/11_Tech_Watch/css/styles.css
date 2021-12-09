@@ -331,7 +331,7 @@ header {
   align-items: center;
   align-items: flex-end;
   padding: .5rem 2%;
-  background-color: #f35151;
+  background-color: #b81414;
   color: #fff; }
   header h1 {
     padding: 0 0 20px 10px;
@@ -410,7 +410,7 @@ figure {
 /*----------- FOOTER --------------*/
 footer {
   grid-area: footer;
-  background-color: #f35151;
+  background-color: #b81414;
   color: #fff;
   text-align: center;
   padding: .5rem 2%; }

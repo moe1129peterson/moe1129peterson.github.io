@@ -1,0 +1,22 @@
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+
+div#weatherCards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div#weatherCards div {
+    width: 29vw;
+}
+
+/*----------- FOOTER --------------*/

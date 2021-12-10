@@ -336,7 +336,7 @@ header {
 
 div#weatherCards {
   display: grid;
-  grid-template-columns: 1 fr;
+  grid-template-columns: 1fr;
   justify-content: center; }
 
 div#weatherCards div {

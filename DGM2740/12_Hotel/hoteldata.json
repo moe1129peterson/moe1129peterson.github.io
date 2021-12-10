@@ -1,0 +1,25 @@
+[   {
+    "name":"Staybridge Suites Lexington",
+    "photo":"images/Lexington1.jpg",
+    "address":["1555 North Canyon Dr.","Lexington, VA 88765"],
+    "phone":"1-307-886-1234"
+    },
+    {
+    "name":"Residence Inn by Marriott Baltimore Downtown",
+    "photo":"images/Baltimore1.jpg",
+    "address":["1777 Light St","Baltimore, MD 21202"],
+    "phone":"1-410-962-1220"
+    },
+    {
+    "name":"Nagoya Marriott Associa Hotel",
+    "photo":"images/NagoyaMarriott1.jpg",
+    "address":["1 Chome-1-4 Meieki Nakamura Ward","Nagoya, JP 4506002"],
+    "phone":"81-52-584-1111"
+    },
+    {
+    "name":"Hotel Chinzanso Tokyo",
+    "photo":"images/Chinzanso1.jpg",
+    "address":["2 Chome-10-8 Sekiguchi Bunkyo City","Tokyo, JP 1128680"],
+    "phone":"81-3-3943-1111"
+    }
+]

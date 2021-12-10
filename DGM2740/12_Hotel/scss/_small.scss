@@ -1,0 +1,144 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-family: $mainFont;
+    font-size: 16px;
+    
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    background-color: $primaryColor;
+    color: #fff;
+    padding: .5rem 2%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: $primaryColor;
+    
+    ul {
+        display: flex;
+        padding: 0;
+        
+        li {
+            display: block;
+            flex-basis: 33.3%;
+            width: 100%; 
+            
+            a {
+                color: #fff;
+                display: block;
+                text-decoration: none;
+                font-size: .9rem;
+                text-align: center;
+                border-left: 1px solid rgba(0,0,0,0.4);
+                padding: .5rem 0;
+                width: 100%;
+                
+                ion-icon {
+                width: 100%;
+                font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+nav ul li:first-child a {
+    border-left: none;
+}
+
+nav ul li a:hover {
+    background-color: #adb3b9;
+    opacity: inherit;
+    color: #333;
+}
+nav ul li.active a {
+    color: #fff;
+    background-color: $menuColor;
+}
+
+/*----------- MAIN --------------*/
+main {
+    min-height: 10rem;
+    padding: 0 2%;
+}
+
+
+div#myCards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+figure {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    
+    img {
+        width: 100%;
+    }
+    
+    figcaption {
+        position: absolute;
+        background-color: rgba(0,0,0,0.4);
+        color: white;
+        bottom: 0;
+        width: 100%;
+        padding: .3rem .2vh;
+    }
+}
+
+section {
+    background-color: $menuColor;
+    margin: 2%;
+}
+
+section div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: .5rem;
+}
+
+span p {
+    color: #fff;
+    padding-left: 1.8rem;
+}
+
+span ion-icon {
+    font-size: 1.6rem;
+    color: #fff;
+    float: left;
+    margin-top: .7rem;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    text-align: center;
+    color: white; 
+    min-height: 6rem;
+    padding: .5rem 2%;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

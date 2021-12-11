@@ -1,0 +1,46 @@
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav li {
+    width: 25%; 
+    float: left;
+}
+
+div.the-best {
+    display: flex;
+    flex-basis: space-between;
+    max-width: 65rem;
+    margin: auto;
+}
+
+/*----------- MAIN --------------*/
+
+main {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    @for $i from 0 through 12 {
+        $w:($i / 12) * 100%;
+        .medium-#{$i} {flex-basis: $w;}	
+    } // end loop
+    
+}
+
+
+/*----------- FOOTER --------------*/
+
+ 
+
+    

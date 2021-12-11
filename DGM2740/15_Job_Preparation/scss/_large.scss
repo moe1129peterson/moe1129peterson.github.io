@@ -1,0 +1,91 @@
+/*----------- BODY --------------*/
+header, nav, main, footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+
+    ul {
+        padding-left: $gutter;
+    }
+
+    li {
+        width:auto;
+    }
+
+    a {
+        padding: .5rem 1rem;
+    }
+
+    ul li {
+        width: auto;
+    }
+
+    ul li a{
+        padding: .5rem 1rem;
+    }
+
+}
+
+/*----------- MAIN --------------*/
+
+main {
+
+    @for $i from 0 through 12 {
+        $w:($i / 12) * 100%;
+        .large-#{$i} {flex-basis: $w;}	
+    } // end loop
+    
+    .short {
+        display: flex;
+        grid-area: short;
+    }
+    
+    h3{
+        margin: 0rem;
+    }
+    #bottom-grid {
+        display: grid;
+        grid-template-columns: auto 300px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "short tall"
+        "wide tall";
+    }
+    
+    .about-us-card {
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .the-best {
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+
+    .bottom-companies {
+        justify-content: space-evenly;
+        display: flex;
+        margin: 1rem 0;
+        
+        img {
+            max-height: 35px;
+        }
+    }
+}
+/*----------- FOOTER --------------*/
+    
+
+
+
+
+

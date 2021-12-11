@@ -1,0 +1,236 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body {
+    overflow-x: hidden;
+}
+
+/*----------- BODY --------------*/
+
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    background-color: #f5f5f5;
+} 
+
+header {
+    padding: 1rem $gutter;
+    border-bottom: 1px solid #a8a8b2;
+    
+    h1 {
+        color: $primaryColor;
+        margin: 0; 
+        font-size: 2rem;
+        font-weight: $heavyWeight;
+    }
+    
+    h2 {
+        margin: 0; 
+        font-size: 1rem; 
+        font-weight: $regularWeight;
+    }
+
+    
+    img {
+        float: left;
+        padding-right: 10px;
+    }
+    
+} // end of header
+
+/*----------- NAV --------------*/
+nav {
+
+    ul {
+        list-style-type: none;
+        margin:0; 
+        padding: 0;
+       
+        li { 
+            width: 25%; 
+            float: right;
+        }
+    }
+    
+    a {
+        display: block;
+        color: #a8a8b2;
+        text-align: center;
+        text-decoration: none;
+        padding: .8rem 0;
+    } 
+    
+    a:hover {
+        background-color: #616168;
+    }
+} // end of nav
+
+.banner img {
+    max-width: 65rem;
+    margin: 10px auto;
+    display: block;
+    height: 100%;
+    
+}
+
+div.the-best {
+    padding: 10px;
+    color: white;
+    max-width: 65rem;
+    margin: auto;
+    background-color: #111118;
+    
+    h2 {
+        color: #fdd831;
+    }
+}
+.the-best-wrapper {
+    background-color: #111118;
+}
+
+/*----------- MAIN --------------*/
+main {
+    display: block;
+    padding: 10px;
+
+    h2, h3 {
+        color: $primaryColor;
+        
+    }
+
+    div.flexed-content {
+        display: flex; 
+        flex-wrap: wrap; 
+        margin: 10px 0;
+        padding-top: 10px; 
+        border-bottom: 1px solid #a8a8b2; 
+        border-top: 1px solid #a8a8b2;
+    }
+
+    .about-us-card {
+        p {
+            color: #a8a8b2;
+            max-height: 10em
+        }
+    }
+    #about-us {
+        h2 {
+            font-weight: $mediumWeight;
+        }
+    }
+
+    @for $i from 0 through 12 {
+            $w:($i / 12) * 100%;
+            .small-#{$i} {flex-basis: $w;}	
+    } // end loop
+
+    figure {
+        margin: 0;
+    }
+
+    .column {
+        padding: 0 $gutter;
+    }
+
+    .fluid-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .right-align {
+        text-align: right;
+    }
+
+    .pricing-button {
+        width: 240px;
+        background-color:#0480b1;
+        border-radius: 18px;
+        display: inline-block;
+        font-size:20px;
+        font-weight: bold;
+        color:#fff;
+        padding: 13px 32px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .pricing-button:active {
+        position:relative;
+        top:1px;
+    }
+
+    .pricing-button:hover {
+        background-color:#059dda;
+    }
+
+    .action-button {
+        text-align: center;
+        padding: 1vw;
+    }
+
+    .short {
+        grid-area: short;
+    }
+    .wide {
+        grid-area: wide;
+    }
+    .tall {
+        grid-area: tall; 
+        text-align: center;
+        background-color: #fff; 
+    }
+
+    #bottom-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "short"
+        "wide"
+        "tall";
+    }
+
+    .info {
+        p {
+            color: #a8a8b2;
+        }
+    }
+
+    .graph {
+        p {
+            color: #767676;
+        }
+    }
+
+    .bottom-companies {
+        display: grid;
+        background-color: #fff;
+        
+        img {
+            max-height: 35px;
+            margin: 10px auto;
+        }
+    }
+}// end of main
+
+.full-width-footer {
+    background-image: linear-gradient(#0480b1, #013f63);
+
+    footer {
+        display: flex;
+        background-image: linear-gradient(#0480b1, #013f63);
+        color: white;
+        padding: 1rem $gutter;
+    }
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

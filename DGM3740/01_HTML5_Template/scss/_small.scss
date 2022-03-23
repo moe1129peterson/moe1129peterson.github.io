@@ -1,0 +1,431 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body, html {
+    font-family: $mainFont;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+header {
+
+    h1 {
+        padding: 10px;
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-left: 10px;
+    }
+
+}
+
+#largeHeader {
+    display: none;
+}
+
+
+/*----- Nav -----*/
+
+.full-width-nav {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+
+    #searchBar {
+        width: 100px;
+        border: 1px solid $primaryColor;
+    }
+    #searchBtn {
+        background-color: $primaryColor;
+        width: 50px;
+        color: $secondaryColor;
+        font-size: 1.5rem;
+        margin-left: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+/*----- Main -----*/
+
+main {
+    display: block; 
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+}
+
+#articles {
+    margin-left: 1rem;
+}
+
+figcaption {
+    height: 20px;
+    text-align: center; 
+    font-size: .8rem;
+    color: #fff;
+}
+
+div.familyGallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+div.familyGallery figure {
+    flex-basis: 46%;
+    margin: 1rem 2%;
+}
+
+div.familyGallery figure img {
+    width: 100%;
+}
+
+.card {
+    background-color: $primaryColor;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.sml {
+    width: 25px;
+}
+
+
+picture {
+    position: relative;
+}
+
+picture div {
+    position: absolute;
+    bottom: 0;
+}
+
+
+div a {
+    display: block;
+    width: 100%;
+    height: 256px;
+    text-decoration: none;
+    padding: 10% 2%;
+    transition: all .5s ease-in;
+    color: white;
+}
+
+div a:hover {
+    background: none;
+    text-shadow: 0 0 4px;
+}
+
+footer {
+
+    color: #fff;
+
+    background-color: $primaryColor;
+    
+    text-align: center;
+   
+    padding: 1rem $gutter;
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    div.flexed {
+        display: flex; 
+        flex-wrap: wrap; 
+        padding: 0;
+        padding-top: 10px; 
+        margin:10px 0;
+        justify-content: center;
+    }
+
+    .column {
+        padding: 0 $gutter;
+    }
+    
+    #social {
+        display: flex;
+        width: 100%;
+    }
+     
+    a {
+        flex-basis: 25%;
+        text-align: center;
+        color: $secondaryColor;
+        font-size: 3rem;
+    }
+        
+     a:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+footer input[type=email] {
+    width: 100%;
+    height: 2.5em;
+    border: none;
+    border-radius: 6px;
+}
+
+footer input[type=submit] {
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 1rem;
+    height: 2.5em;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    margin-bottom: 1rem;
+}
+
+footer input:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/*----- Cruise Page -----*/
+
+.cruise-cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    margin-left: $gutter;
+    margin-right: $gutter;
+}
+
+.cruise-card {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    h2 {
+        margin-bottom: $gutter;
+    }
+}
+
+.cruise-card-btn-flexed {
+    display: flex;
+    justify-content: center;
+}
+
+.cruise-card-btn {
+    width: 90%;
+    padding: 10px;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.cruise-card-btn:hover {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    cursor: pointer;
+}
+
+.cruise-card-img {
+    width: 100%;
+    margin-bottom: $gutter;
+}
+
+
+/*----- Agent Page -----*/
+
+.agent-info {
+    margin-left: $gutter;
+    margin-right: $gutter;
+    margin-bottom: 4rem;
+}
+
+.agent-h1 {
+    margin-left: $gutter;
+}
+
+.agent-contact {
+
+    img {
+        max-width: 100%;
+        max-height: auto;
+    }
+}
+
+
+/*----- Booking Page -----*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: none;
+    padding: .5rem;
+}
+
+form legend {
+    color: $primaryColor;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 30rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding-top: .75rem;
+    color: #555;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #d3d3d3;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: $primaryColor;
+}
+  
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+} 
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    background: white;
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+form input.submitBtn {
+    background-color: $primaryColor;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    margin: 0 0 2rem 1%;
+    width: 96%;
+    height: 50px;
+    max-width: 30rem;
+}
+
+.submitBtn:hover {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+.top-margin {
+    margin-top: $gutter;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

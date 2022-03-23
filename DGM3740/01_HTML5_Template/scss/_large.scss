@@ -1,0 +1,64 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+    max-width: 64rem;
+    margin: auto;
+    }
+
+    .full-width-nav {
+       background-color: $primaryColor;
+
+       width: 64rem;
+    } 
+
+    #navWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* NAV HERE  */
+
+    nav {
+        margin-left: -1rem;
+    }
+
+    nav ul li a {
+        height: 50px;
+        font-size: .9rem;
+    }
+
+    .search {
+       
+        #searchBar {
+        height: 50px;
+        }
+    }
+
+    header {
+        max-width: 64rem;
+    }
+
+    main {
+        margin: auto;
+        max-width: 64rem;
+
+    }
+
+    div.familyGallery figure {
+        flex-basis: 21%;
+        margin: 1rem 2%;
+    }
+    
+    div.hover-cards {
+        column-count: 4;
+    }
+
+    footer {
+        @for $i from 0 through 12 {
+            $w:($i / 12) * 100%;
+            .large-#{$i} {flex-basis: $w;}	
+        } 
+    }
+    
+} /*end large */

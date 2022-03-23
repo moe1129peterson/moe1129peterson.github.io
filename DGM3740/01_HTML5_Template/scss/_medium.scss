@@ -1,0 +1,234 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    /* NAVIGATION STUFF GOES HERE  */
+
+    nav button {
+        display: none;
+    }
+
+    #navWrapper {
+        background-color: $menuColor;
+        width: 100%;
+    }
+
+    .full-width-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        background-color: $menuColor;
+
+        ul {
+            display: flex;
+            margin-left: 2%;
+            border-left: 1px solid rgba(0,0,0,0.1);
+        }
+
+        ul li {
+            border-right: 1px solid rgba(0,0,0,0.1);
+        }
+
+        ul li a {
+            display: block;
+            background-color: $menuColor;
+            font-size: 1rem;
+            padding: .9rem 1.2rem;
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            transition: background 0.3s linear;
+            height: 50px;
+            width: 110px;
+            text-align: center;
+        }
+
+        ul li a:hover {
+            background-color: rgba(92, 224, 230, 0.5);
+        }
+
+        #primaryNav li.parent {
+            content: "\25BC";
+        }
+    
+        #primaryNav li.parent > a:after {
+            content: "\25BC";
+            font-size: .65rem;
+            color: rgba(92, 224, 230,0.5);
+            float: left;
+        }
+
+        ul li ul {
+            display: flex;
+            flex-direction: column;
+            background-color:$menuColor;
+            border: none;
+            width: 110px;
+            padding-bottom: 5px;
+            position: absolute;
+            left: -999rem;
+            z-index: 99;
+        } // child ul
+
+        ul li ul li {
+            border-right: none;
+            border-top: solid 1px rbga(0,0,0,0.2);
+        } // child li
+
+        ul li:hover ul {
+            left: auto;
+            margin-left: 0;
+        }
+
+        li.active a {
+            background-color: $secondaryColor;
+            color: $primaryColor;
+        }
+
+        .parent {
+            text-decoration: none;
+        }
+    } // end of nav
+
+
+    #primaryNav li a {
+        text-decoration: none;
+    }
+
+    .search {
+        
+        #searchBar {
+        width: 150px;
+        }
+
+        #searchBtn {
+            color: #fff;
+        }
+
+        #searchBtn:hover {
+            color: rgba(92, 224, 230, 0.5);
+        }
+    }
+
+    #largeHeader {
+        display: contents;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            align-items: flex-end;
+            color: black;
+            margin: 60px 1rem 0 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    #mobileHeader {
+        display: none;
+    }
+    
+    main {
+        h1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+    }
+
+    div.hover-cards {
+        column-count: 2;
+    }
+    
+    footer {
+        @for $i from 0 through 12 {
+            $w:($i / 12) * 100%;
+            .medium-#{$i} {flex-basis: $w;}	
+      } // end loop
+    }
+
+    .full-width-footer {
+        background-color: $primaryColor;
+    }
+    
+
+    /*----- Cruise Page -----*/
+
+    .cruise-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cruise-card {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cruise-card-img {
+        width: 250px;
+        margin-right: 10px;
+    }
+    
+
+    .cruise-card-btn-flexed {
+        display: flex;
+        justify-content: end;
+    }
+
+    .cruise-card-btn {
+        background-color: $primaryColor;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        width: 25%;
+    }
+
+
+    /*----- Agent Page -----*/
+
+    .agent-info {
+        display: flex;
+        flex-direction: column;
+        margin: none;
+    }
+
+    .agent-contact {
+        display: flex;
+        flex-direction: row;
+        padding: none;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+
+        .agent-img {
+            display: flex;
+            order: 1;
+            padding: 5px;
+        }
+
+        .agent-details {
+            justify-content: left;
+        }
+    }
+
+
+} /*end medium */

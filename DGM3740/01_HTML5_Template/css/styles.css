@@ -795,6 +795,8 @@ form label.top input:required:valid {
       margin: 60px 1rem 0 0;
       font-size: 24px;
       font-weight: 700; }
+    #largeHeader a {
+      text-decoration: none; }
 
   #mobileHeader {
     display: none; }
